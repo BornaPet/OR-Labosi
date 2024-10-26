@@ -1,0 +1,12 @@
+monument_id,monument_name,location,type,year_installed,material,height,historical_significance,popularity,district,artist_id,artist_name,artist_birth_year,artist_death_year,artist_nationality
+1,Kip bana Jelačića,Trg bana Josipa Jelačića,kip,1866,bronca,4.25,Središnji kip na glavnom trgu,10,Donji Grad,1,Anton Dominik Fernkorn,1813,1878,austrijski
+2,Kip kralja Tomislava,Trg kralja Tomislava,kip,1947,bronca,5,Prikazuje prvog hrvatskog kralja,9,Donji Grad,2,Robert Frangeš Mihanović,1872,1940,hrvatski
+3,Matoš na klupi,Strossmayerovo šetalište,kip,1972,aluminij,1.5,Kip posvećen književniku Antunu Gustavu Matošu,8,Gornji Grad,3,Ivan Kožarić,1921,2020,hrvatski
+4,Kip J.J. Strossmayera,Strossmayerov trg,kip,1924,bronca,3,Posveta biskupu i meceni hrvatske kulture,8,Donji Grad,4,Ivan Meštrović,1883,1962,hrvatski
+5,Kip Marije Jurić Zagorke,Tkalčićeva ulica,statua,1990,bronca,1.7,Posveta prvoj hrvatskoj novinarki i književnici,9,Gornji Grad,5,Stjepan Gračan,1941,2022,hrvatski
+6,Kumica Barica,Dolac,kip,2006,bronca,1.6,Kip posvećen tržnim prodavačima,7,Donji Grad,6,Stjepan Gračan,1941,2022,hrvatski
+7,Sveti Juraj u borbi sa zmajem,Trg Republike Hrvatske,kip,1867,bronca,2.3,Simbol borbe protiv zla,8,Donji Grad,7,Anton Dominik Fernkorn,1813,1878,austrijski
+8,August Šenoa,Vlaška ulica,statua,1988,bronca,1.9,Kip posvećen poznatom hrvatskom piscu,8,Gornji Grad,8,Marija Ujević Galetović,1933,2020,hrvatski
+9,Bogorodica s anđelima,Katedrala,skulptura,1873,mramor i zeljezo,5,Skulptura Bogorodice u Zagrebačkoj katedrali,9,Gornji Grad,9,Anton Dominik Fernkorn,1813,1878,austrijski
+10,Dora Krupićeva,Gornji Grad,kip,1929,bronca,1.6,Posveta liku iz romana Augusta Šenoe,7,Gornji Grad,10,Ivo Kerdić,1881,1953,hrvatski
+11,Zdenac života,Trg Republike Hrvatske,fontana,1912,bronca,1.2,Fontana koja simbolizira život,10,Donji Grad,11,Ivan Meštrović,1883,1962,hrvatski
