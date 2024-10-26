@@ -2,7 +2,7 @@
 
 The dataset includes a table of monuments and a table of artists. Each monument record contains information such as name, location, type, installation year, material, height, historical significance, popularity, and district. Each artist is linked to one monument and includes attributes such as name, birth year, death year and nationality.
 
-## Metapodaci
+## Metadata
 
 - **License**: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 - **Author**: Borna Petak
