@@ -1,0 +1,233 @@
+[
+    {
+        "id": 1,
+        "name": "Kip bana Jelačića",
+        "location": "Trg bana Josipa Jelačića",
+        "type": "kip",
+        "year_installed": 1866,
+        "material": "bronca",
+        "height": 4.25,
+        "historical_significance": "Središnji kip na glavnom trgu",
+        "popularity": 10,
+        "district": "Donji Grad",
+        "artists": [
+            {
+                "id": 1,
+                "name": "Anton Dominik Fernkorn",
+                "birth_year": 1813,
+                "death_year": 1878,
+                "nationality": "austrijski"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Kip kralja Tomislava",
+        "location": "Trg kralja Tomislava",
+        "type": "kip",
+        "year_installed": 1947,
+        "material": "bronca",
+        "height": 5.0,
+        "historical_significance": "Prikazuje prvog hrvatskog kralja",
+        "popularity": 9,
+        "district": "Donji Grad",
+        "artists": [
+            {
+                "id": 2,
+                "name": "Robert Frangeš Mihanović",
+                "birth_year": 1872,
+                "death_year": 1940,
+                "nationality": "hrvatski"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Matoš na klupi",
+        "location": "Strossmayerovo šetalište",
+        "type": "kip",
+        "year_installed": 1972,
+        "material": "aluminij",
+        "height": 1.5,
+        "historical_significance": "Kip posvećen književniku Antunu Gustavu Matošu",
+        "popularity": 8,
+        "district": "Gornji Grad",
+        "artists": [
+            {
+                "id": 3,
+                "name": "Ivan Kožarić",
+                "birth_year": 1921,
+                "death_year": 2020,
+                "nationality": "hrvatski"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Kip J.J. Strossmayera",
+        "location": "Strossmayerov trg",
+        "type": "kip",
+        "year_installed": 1924,
+        "material": "bronca",
+        "height": 3.0,
+        "historical_significance": "Posveta biskupu i meceni hrvatske kulture",
+        "popularity": 8,
+        "district": "Donji Grad",
+        "artists": [
+            {
+                "id": 4,
+                "name": "Ivan Meštrović",
+                "birth_year": 1883,
+                "death_year": 1962,
+                "nationality": "hrvatski"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Kip Marije Jurić Zagorke",
+        "location": "Tkalčićeva ulica",
+        "type": "statua",
+        "year_installed": 1990,
+        "material": "bronca",
+        "height": 1.7,
+        "historical_significance": "Posveta prvoj hrvatskoj novinarki i književnici",
+        "popularity": 9,
+        "district": "Gornji Grad",
+        "artists": [
+            {
+                "id": 5,
+                "name": "Stjepan Gračan",
+                "birth_year": 1941,
+                "death_year": 2022,
+                "nationality": "hrvatski"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Kumica Barica",
+        "location": "Dolac",
+        "type": "kip",
+        "year_installed": 2006,
+        "material": "bronca",
+        "height": 1.6,
+        "historical_significance": "Kip posvećen tržnim prodavačima",
+        "popularity": 7,
+        "district": "Donji Grad",
+        "artists": [
+            {
+                "id": 6,
+                "name": "Stjepan Gračan",
+                "birth_year": 1941,
+                "death_year": 2022,
+                "nationality": "hrvatski"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Sveti Juraj u borbi sa zmajem",
+        "location": "Trg Republike Hrvatske",
+        "type": "kip",
+        "year_installed": 1867,
+        "material": "bronca",
+        "height": 2.3,
+        "historical_significance": "Simbol borbe protiv zla",
+        "popularity": 8,
+        "district": "Donji Grad",
+        "artists": [
+            {
+                "id": 7,
+                "name": "Anton Dominik Fernkorn",
+                "birth_year": 1813,
+                "death_year": 1878,
+                "nationality": "austrijski"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "August Šenoa",
+        "location": "Vlaška ulica",
+        "type": "statua",
+        "year_installed": 1988,
+        "material": "bronca",
+        "height": 1.9,
+        "historical_significance": "Kip posvećen poznatom hrvatskom piscu",
+        "popularity": 8,
+        "district": "Gornji Grad",
+        "artists": [
+            {
+                "id": 8,
+                "name": "Marija Ujević Galetović",
+                "birth_year": 1933,
+                "death_year": 2020,
+                "nationality": "hrvatski"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Bogorodica s anđelima",
+        "location": "Katedrala",
+        "type": "skulptura",
+        "year_installed": 1873,
+        "material": "mramor i zeljezo",
+        "height": 5.0,
+        "historical_significance": "Skulptura Bogorodice u Zagrebačkoj katedrali",
+        "popularity": 9,
+        "district": "Gornji Grad",
+        "artists": [
+            {
+                "id": 9,
+                "name": "Anton Dominik Fernkorn",
+                "birth_year": 1813,
+                "death_year": 1878,
+                "nationality": "austrijski"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Dora Krupićeva",
+        "location": "Gornji Grad",
+        "type": "kip",
+        "year_installed": 1929,
+        "material": "bronca",
+        "height": 1.6,
+        "historical_significance": "Posveta liku iz romana Augusta Šenoe",
+        "popularity": 7,
+        "district": "Gornji Grad",
+        "artists": [
+            {
+                "id": 10,
+                "name": "Ivo Kerdić",
+                "birth_year": 1881,
+                "death_year": 1953,
+                "nationality": "hrvatski"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Zdenac života",
+        "location": "Trg Republike Hrvatske",
+        "type": "fontana",
+        "year_installed": 1912,
+        "material": "bronca",
+        "height": 1.2,
+        "historical_significance": "Fontana koja simbolizira život",
+        "popularity": 10,
+        "district": "Donji Grad",
+        "artists": [
+            {
+                "id": 11,
+                "name": "Ivan Meštrović",
+                "birth_year": 1883,
+                "death_year": 1962,
+                "nationality": "hrvatski"
+            }
+        ]
+    }
+]
