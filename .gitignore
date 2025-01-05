@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/OtvorenoRacunalstvoLabosi
+/obj/project.nuget.cache
+/obj/project.assets.json
+/obj/OtvorenoRacunalstvoLabosi.csproj.nuget.dgspec.json
