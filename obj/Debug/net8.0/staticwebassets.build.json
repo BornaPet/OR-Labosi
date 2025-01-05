@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HJoCEQCNJUXIs+ranqxwGgeh1k7v1kXqfwg2m8rXFnw=",
+  "Hash": "ut3iLCW/+O46flaumbo5FKhztLRo1u1utX0+Ig8Mfio=",
   "Source": "OtvorenoRacunalstvoLabosi",
   "BasePath": "_content/OtvorenoRacunalstvoLabosi",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\data\\monuments.json"
+    },
+    {
+      "Identity": "C:\\Users\\borna\\source\\repos\\OtvorenoRacunalstvoLabosi\\OtvorenoRacunalstvoLabosi\\wwwroot\\data\\schema.json",
+      "SourceId": "OtvorenoRacunalstvoLabosi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\borna\\source\\repos\\OtvorenoRacunalstvoLabosi\\OtvorenoRacunalstvoLabosi\\wwwroot\\",
+      "BasePath": "_content/OtvorenoRacunalstvoLabosi",
+      "RelativePath": "data/schema.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\data\\schema.json"
     },
     {
       "Identity": "C:\\Users\\borna\\source\\repos\\OtvorenoRacunalstvoLabosi\\OtvorenoRacunalstvoLabosi\\wwwroot\\favicon.ico",

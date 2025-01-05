@@ -57,6 +57,11 @@
                 <input asp-for="District" class="form-control" required/>
                 <span asp-validation-for="District" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label asp-for="Artist.Id" class="control-label">Artist</label>
+                <select asp-for="Artist.Id" class="form-control" asp-items="ViewBag.Artists" required></select>
+                <span asp-validation-for="Artist.Id" class="text-danger"></span>
+            </div>
             <div class="form-group d-flex justify-content-between mt-3">
                 <div>
                     <a class="btn btn-danger" asp-action="Index">Back to List</a>

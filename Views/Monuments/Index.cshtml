@@ -47,7 +47,10 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for="monument in filteredMonuments" :key="monument.id">
+            <tr v-for="monument in filteredMonuments" 
+                :key="monument.Id"
+                v-on:click="goToDetails(monument.Id)"
+                style="cursor: pointer;">
                 <td>{{ monument.Name }}</td>
                 <td>{{ monument.Location }}</td>
                 <td>{{ monument.YearInstalled}}</td>
@@ -98,6 +101,9 @@
                 } catch (error) {
                     console.error("Error downloading data:", error);
                 }
+            },
+            goToDetails(id) {
+                window.location.href = `/Monuments/Details/${id}`;
             }
         
         },
@@ -113,12 +119,12 @@
                     const height = (monument.Height || 0);
 
                     if (this.searchField === 'all') {
-                        return name.includes(this.searchTerm.toLowerCase()) || 
-                        location.includes(this.searchTerm.toLowerCase()) ||
-                        artist.includes(this.searchTerm.toLowerCase()) ||
-                        an.includes(this.searchTerm.toLowerCase()) ||
-                        material.includes(this.searchTerm.toLowerCase()) ||
-                        height.toString().includes(this.searchTerm);
+                        return name.includes(this.searchTerm.toLowerCase()) ||
+                            location.includes(this.searchTerm.toLowerCase()) ||
+                            artist.includes(this.searchTerm.toLowerCase()) ||
+                            an.includes(this.searchTerm.toLowerCase()) ||
+                            material.includes(this.searchTerm.toLowerCase()) ||
+                            height.toString().includes(this.searchTerm);
                     } else if (this.searchField === 'name') {
                         return name.includes(this.searchTerm.toLowerCase());
                     } else if (this.searchField === 'location') {

@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\data\\monuments.json"
     },
     {
+      "Id": "C:\\Users\\borna\\source\\repos\\OtvorenoRacunalstvoLabosi\\OtvorenoRacunalstvoLabosi\\wwwroot\\data\\schema.json",
+      "PackagePath": "staticwebassets\\data\\schema.json"
+    },
+    {
       "Id": "C:\\Users\\borna\\source\\repos\\OtvorenoRacunalstvoLabosi\\OtvorenoRacunalstvoLabosi\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
