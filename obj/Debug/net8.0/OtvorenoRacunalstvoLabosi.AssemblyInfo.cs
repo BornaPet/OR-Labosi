@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OtvorenoRacunalstvoLabosi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4ccb42ed17e6c2e92e51b426a2af1b6654437e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42698d3e80e715aac865d2f03fd971bb9dc4b78f")]
 [assembly: System.Reflection.AssemblyProductAttribute("OtvorenoRacunalstvoLabosi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OtvorenoRacunalstvoLabosi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

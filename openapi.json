@@ -1,0 +1,226 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Monuments API",
+    "description": "API za upravljanje spomenicima",
+    "contact": {
+      "name": "Borna Petak",
+      "url": "https://github.com/bornapet",
+      "email": "borna.petak@fer.hr"
+    },
+    "license": {
+      "name": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1"
+    },
+    "version": "v1"
+  },
+  "paths": {
+    "/filtered": {
+      "get": {
+        "tags": [ "Monuments" ],
+        "parameters": [
+          {
+            "name": "searchField",
+            "in": "query",
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "searchTerm",
+            "in": "query",
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": "json"
+            }
+          }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/api/MonumentsApi": {
+      "get": {
+        "tags": [ "MonumentsApi" ],
+        "responses": {
+          "200": { "description": "OK" },
+          "404": { "description": "NotFound" }
+
+        }
+      },
+      "post": {
+        "tags": [ "MonumentsApi" ],
+        "requestBody": {
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/MonumentDto" } },
+            "text/json": { "schema": { "$ref": "#/components/schemas/MonumentDto" } },
+            "application/*+json": { "schema": { "$ref": "#/components/schemas/MonumentDto" } }
+          }
+        },
+        "responses": {
+          "200": { "description": "OK" },
+          "404": { "description": "NotFound" }
+
+        }
+      }
+    },
+    "/api/MonumentsApi/{id}": {
+      "get": {
+        "tags": [ "MonumentsApi" ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": { "description": "OK" }
+          "404":  {"description":  "NotFound"}
+        }
+      },
+      "put": {
+        "tags": [ "MonumentsApi" ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": { "schema": { "$ref": "#/components/schemas/MonumentDto" } },
+            "text/json": { "schema": { "$ref": "#/components/schemas/MonumentDto" } },
+            "application/*+json": { "schema": { "$ref": "#/components/schemas/MonumentDto" } }
+          }
+        },
+        "responses": { "200": { "description": "OK" } }
+      },
+      "delete": {
+        "tags": [ "MonumentsApi" ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/api/MonumentsApi/filter": {
+      "get": {
+        "tags": [ "MonumentsApi" ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/api/MonumentsApi/artist": {
+      "get": {
+        "tags": [ "MonumentsApi" ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ArtistDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthYear": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "deathYear": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nationality": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MonumentDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "yearInstalled": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "material": {
+            "type": "string",
+            "nullable": true
+          },
+          "height": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "historicalSignificance": {
+            "type": "string",
+            "nullable": true
+          },
+          "artistId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "artist": { "$ref": "#/components/schemas/ArtistDto" }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
