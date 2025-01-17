@@ -12,15 +12,10 @@ using OtvorenoRacunalstvoLabosi.Models;
 using Microsoft.CodeAnalysis.Elfie.Serialization;
 using System.Globalization;
 using CsvHelper.Configuration;
-using CsvHelper;
-using OtvorenoRacunalstvoLabosi.Controllers.API;
-using System.ComponentModel;
-using Microsoft.DotNet.MSIdentity.Shared;
-using System.Web.Http.Results;
+
 
 namespace OtvorenoRacunalstvoLabosi.Controllers
 {
-
     public class MonumentsController : Controller
     {
         private readonly OtvorenoRacunarstvoLabosiContext _context;
@@ -146,6 +141,108 @@ namespace OtvorenoRacunalstvoLabosi.Controllers
             return File(Encoding.UTF8.GetBytes(jsonData), "application/json", "monuments.json");
         }
 
+        public IActionResult RefreshData()
+        {
+            RefreshCsv();
+            RefreshJson();
+            
+            return RedirectToAction("Index");
+        }
+        public void RefreshCsv()
+        {
+            var monuments = _context.Monuments.Include(x => x.Artist).ToList();
+
+            
+            var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                Delimiter = ",",
+                Encoding = Encoding.UTF8,
+                HasHeaderRecord = true
+            };
+
+            string dataFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data");
+            string filePath = Path.Combine(dataFolder, "monuments.csv");
+
+            if (!Directory.Exists(dataFolder))
+            {
+                Directory.CreateDirectory(dataFolder);
+            }
+
+            using (var writer = new StreamWriter(filePath, false, Encoding.UTF8)) 
+            using (var csv = new CsvHelper.CsvWriter(writer, csvConfig))
+            {
+                csv.WriteRecords(monuments);
+            }
+
+            byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+        }
+        public void RefreshJson()
+        {
+            var monuments = _context.Monuments.Include(x => x.Artist).ToList();
+            var jsonLdMonuments = monuments.Select(m => new
+            {
+                @context = "https://schema.org",
+                @type = "Sculpture",
+                identifier = m.Id,
+                name = m.Name,
+                locationCreated = new
+                {
+                    @type = "Place",
+                    name = m.Location,
+                    address = new
+                    {
+                        @type = "PostalAddress",
+                        addressLocality = m.District
+                    }
+                },
+                artform = m.Type,
+                dateCreated = m.YearInstalled,
+                material = m.Material,
+                height = new
+                {
+                    @type = "QuantitativeValue",
+                    value = m.Height,
+                    unitCode = "MTR"
+                },
+                keywords = m.HistoricalSignificance,
+                aggregateRating = new
+                {
+                    @type = "AggregateRating",
+                    ratingValue = m.Popularity
+                },
+                containedInPlace = new
+                {
+                    @type = "AdministrativeArea",
+                    name = m.District
+                },
+                author = new
+                {
+                    @type = "Person",
+                    name = m.Artist.Name,
+                    birthDate = m.Artist.BirthYear,
+                    deathDate = m.Artist.DeathYear,
+                    nationality = m.Artist.Nationality
+                }
+            });
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping 
+            };
+            string dataFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data");
+            string filePath = Path.Combine(dataFolder, "monuments.json");
+
+            if (!Directory.Exists(dataFolder))
+            {
+                Directory.CreateDirectory(dataFolder);
+            }
+            var jsonData = JsonSerializer.Serialize(jsonLdMonuments, options);
+            System.IO.File.WriteAllText(filePath, jsonData, Encoding.UTF8);
+            byte[] fileBytes = System.IO.File.ReadAllBytes(filePath);
+
+        }
+
+
 
         // GET: Monuments/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -266,14 +363,15 @@ namespace OtvorenoRacunalstvoLabosi.Controllers
             return View(monument);
         }
 
-        [HttpDelete]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public JsonResult Delete(int id)
+        public IActionResult Delete(int id)
         {
             var monument = _context.Monuments.Find(id);
             if(monument == null)
             {
-                return new JsonResult(NotFound());
+
+                return RedirectToAction("Index");
             }
             if (monument != null)
             {
@@ -281,7 +379,7 @@ namespace OtvorenoRacunalstvoLabosi.Controllers
             }
 
              _context.SaveChanges();
-            return new JsonResult(Ok());
+            return RedirectToAction("Index");
         }
 
         private bool MonumentExists(int id)

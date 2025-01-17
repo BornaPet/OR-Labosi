@@ -6,4 +6,5 @@
 /obj/project.nuget.cache
 /obj/project.assets.json
 /obj/OtvorenoRacunalstvoLabosi.csproj.nuget.dgspec.json
-/.vs/OR-Labosi/CopilotIndices/0.2.1657.32929
+/.vs/
+/bin/

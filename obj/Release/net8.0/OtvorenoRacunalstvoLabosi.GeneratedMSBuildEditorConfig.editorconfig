@@ -17,63 +17,63 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OtvorenoRacunalstvoLabosi
 build_property.RootNamespace = OtvorenoRacunalstvoLabosi
-build_property.ProjectDir = C:\Users\borna\source\repos\OR-Labosi\
+build_property.ProjectDir = C:\Users\borna\Source\Repos\OR-Labosi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\borna\source\repos\OR-Labosi
+build_property.MSBuildProjectDirectory = C:\Users\borna\Source\Repos\OR-Labosi
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/Home/Index.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/Home/Privacy.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/Monuments/Create.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/Monuments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udW1lbnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/Monuments/Delete.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/Monuments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udW1lbnRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/Monuments/Details.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/Monuments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udW1lbnRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/Monuments/Edit.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/Monuments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udW1lbnRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/Monuments/Index.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/Monuments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9udW1lbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/Profile/Index.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/Profile/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/Shared/Error.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/_ViewImports.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/_ViewStart.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/borna/source/repos/OR-Labosi/Views/Shared/_Layout.cshtml]
+[C:/Users/borna/Source/Repos/OR-Labosi/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6ggizoamvi

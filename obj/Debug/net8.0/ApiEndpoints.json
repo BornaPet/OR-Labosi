@@ -26,6 +26,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "OtvorenoRacunalstvoLabosi.API.MonumentsApiController",
+    "Method": "GetAll",
+    "RelativePath": "api/MonumentsApi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OtvorenoRacunalstvoLabosi.API.MonumentsApiController",
+    "Method": "Create",
+    "RelativePath": "api/MonumentsApi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "monumentDto",
+        "Type": "OtvorenoRacunalstvoLabosi.Models.Monument",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "OtvorenoRacunalstvoLabosi.Controllers.API.MonumentsApiController",
     "Method": "GetById",
     "RelativePath": "api/MonumentsApi/{id}",
@@ -79,7 +105,76 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "OtvorenoRacunalstvoLabosi.API.MonumentsApiController",
+    "Method": "GetById",
+    "RelativePath": "api/MonumentsApi/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OtvorenoRacunalstvoLabosi.API.MonumentsApiController",
+    "Method": "Update",
+    "RelativePath": "api/MonumentsApi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "monument",
+        "Type": "OtvorenoRacunalstvoLabosi.Models.Monument",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OtvorenoRacunalstvoLabosi.API.MonumentsApiController",
+    "Method": "Delete",
+    "RelativePath": "api/MonumentsApi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "OtvorenoRacunalstvoLabosi.Controllers.API.MonumentsApiController",
+    "Method": "SearchArtists",
+    "RelativePath": "api/MonumentsApi/artist",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "OtvorenoRacunalstvoLabosi.API.MonumentsApiController",
     "Method": "SearchArtists",
     "RelativePath": "api/MonumentsApi/artist",
     "HttpMethod": "GET",
@@ -111,25 +206,15 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "OtvorenoRacunalstvoLabosi.Controllers.MonumentsController",
-    "Method": "GetFilteredMonuments",
-    "RelativePath": "filtered",
+    "ContainingType": "OtvorenoRacunalstvoLabosi.API.MonumentsApiController",
+    "Method": "Search",
+    "RelativePath": "api/MonumentsApi/filter",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "searchField",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "searchTerm",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "format",
+        "Name": "name",
         "Type": "System.String",
         "IsRequired": false
       }

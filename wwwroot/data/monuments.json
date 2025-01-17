@@ -1,233 +1,458 @@
-[
-    {
-        "id": 1,
-        "name": "Kip bana Jelačića",
-        "location": "Trg bana Josipa Jelačića",
-        "type": "kip",
-        "year_installed": 1866,
-        "material": "bronca",
-        "height": 4.25,
-        "historical_significance": "Središnji kip na glavnom trgu",
-        "popularity": 10,
-        "district": "Donji Grad",
-        "artists": [
-            {
-                "id": 1,
-                "name": "Anton Dominik Fernkorn",
-                "birth_year": 1813,
-                "death_year": 1878,
-                "nationality": "austrijski"
-            }
-        ]
+﻿[
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 2,
+    "name": "Kip kralja Tomislava",
+    "locationCreated": {
+      "type": "Place",
+      "name": "Trg kralja Tomislava",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "Donji Grad"
+      }
     },
-    {
-        "id": 2,
-        "name": "Kip kralja Tomislava",
-        "location": "Trg kralja Tomislava",
-        "type": "kip",
-        "year_installed": 1947,
-        "material": "bronca",
-        "height": 5.0,
-        "historical_significance": "Prikazuje prvog hrvatskog kralja",
-        "popularity": 9,
-        "district": "Donji Grad",
-        "artists": [
-            {
-                "id": 2,
-                "name": "Robert Frangeš Mihanović",
-                "birth_year": 1872,
-                "death_year": 1940,
-                "nationality": "hrvatski"
-            }
-        ]
+    "artform": "kip",
+    "dateCreated": 1947,
+    "material": "bronca",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 5,
+      "unitCode": "MTR"
     },
-    {
-        "id": 3,
-        "name": "Matoš na klupi",
-        "location": "Strossmayerovo šetalište",
-        "type": "kip",
-        "year_installed": 1972,
-        "material": "aluminij",
-        "height": 1.5,
-        "historical_significance": "Kip posvećen književniku Antunu Gustavu Matošu",
-        "popularity": 8,
-        "district": "Gornji Grad",
-        "artists": [
-            {
-                "id": 3,
-                "name": "Ivan Kožarić",
-                "birth_year": 1921,
-                "death_year": 2020,
-                "nationality": "hrvatski"
-            }
-        ]
+    "keywords": "Prikazuje prvog hrvatskog kralja",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 9
     },
-    {
-        "id": 4,
-        "name": "Kip J.J. Strossmayera",
-        "location": "Strossmayerov trg",
-        "type": "kip",
-        "year_installed": 1924,
-        "material": "bronca",
-        "height": 3.0,
-        "historical_significance": "Posveta biskupu i meceni hrvatske kulture",
-        "popularity": 8,
-        "district": "Donji Grad",
-        "artists": [
-            {
-                "id": 4,
-                "name": "Ivan Meštrović",
-                "birth_year": 1883,
-                "death_year": 1962,
-                "nationality": "hrvatski"
-            }
-        ]
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "Donji Grad"
     },
-    {
-        "id": 5,
-        "name": "Kip Marije Jurić Zagorke",
-        "location": "Tkalčićeva ulica",
-        "type": "statua",
-        "year_installed": 1990,
-        "material": "bronca",
-        "height": 1.7,
-        "historical_significance": "Posveta prvoj hrvatskoj novinarki i književnici",
-        "popularity": 9,
-        "district": "Gornji Grad",
-        "artists": [
-            {
-                "id": 5,
-                "name": "Stjepan Gračan",
-                "birth_year": 1941,
-                "death_year": 2022,
-                "nationality": "hrvatski"
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Kumica Barica",
-        "location": "Dolac",
-        "type": "kip",
-        "year_installed": 2006,
-        "material": "bronca",
-        "height": 1.6,
-        "historical_significance": "Kip posvećen tržnim prodavačima",
-        "popularity": 7,
-        "district": "Donji Grad",
-        "artists": [
-            {
-                "id": 6,
-                "name": "Stjepan Gračan",
-                "birth_year": 1941,
-                "death_year": 2022,
-                "nationality": "hrvatski"
-            }
-        ]
-    },
-    {
-        "id": 7,
-        "name": "Sveti Juraj u borbi sa zmajem",
-        "location": "Trg Republike Hrvatske",
-        "type": "kip",
-        "year_installed": 1867,
-        "material": "bronca",
-        "height": 2.3,
-        "historical_significance": "Simbol borbe protiv zla",
-        "popularity": 8,
-        "district": "Donji Grad",
-        "artists": [
-            {
-                "id": 7,
-                "name": "Anton Dominik Fernkorn",
-                "birth_year": 1813,
-                "death_year": 1878,
-                "nationality": "austrijski"
-            }
-        ]
-    },
-    {
-        "id": 8,
-        "name": "August Šenoa",
-        "location": "Vlaška ulica",
-        "type": "statua",
-        "year_installed": 1988,
-        "material": "bronca",
-        "height": 1.9,
-        "historical_significance": "Kip posvećen poznatom hrvatskom piscu",
-        "popularity": 8,
-        "district": "Gornji Grad",
-        "artists": [
-            {
-                "id": 8,
-                "name": "Marija Ujević Galetović",
-                "birth_year": 1933,
-                "death_year": 2020,
-                "nationality": "hrvatski"
-            }
-        ]
-    },
-    {
-        "id": 9,
-        "name": "Bogorodica s anđelima",
-        "location": "Katedrala",
-        "type": "skulptura",
-        "year_installed": 1873,
-        "material": "mramor i zeljezo",
-        "height": 5.0,
-        "historical_significance": "Skulptura Bogorodice u Zagrebačkoj katedrali",
-        "popularity": 9,
-        "district": "Gornji Grad",
-        "artists": [
-            {
-                "id": 9,
-                "name": "Anton Dominik Fernkorn",
-                "birth_year": 1813,
-                "death_year": 1878,
-                "nationality": "austrijski"
-            }
-        ]
-    },
-    {
-        "id": 10,
-        "name": "Dora Krupićeva",
-        "location": "Gornji Grad",
-        "type": "kip",
-        "year_installed": 1929,
-        "material": "bronca",
-        "height": 1.6,
-        "historical_significance": "Posveta liku iz romana Augusta Šenoe",
-        "popularity": 7,
-        "district": "Gornji Grad",
-        "artists": [
-            {
-                "id": 10,
-                "name": "Ivo Kerdić",
-                "birth_year": 1881,
-                "death_year": 1953,
-                "nationality": "hrvatski"
-            }
-        ]
-    },
-    {
-        "id": 11,
-        "name": "Zdenac života",
-        "location": "Trg Republike Hrvatske",
-        "type": "fontana",
-        "year_installed": 1912,
-        "material": "bronca",
-        "height": 1.2,
-        "historical_significance": "Fontana koja simbolizira život",
-        "popularity": 10,
-        "district": "Donji Grad",
-        "artists": [
-            {
-                "id": 11,
-                "name": "Ivan Meštrović",
-                "birth_year": 1883,
-                "death_year": 1962,
-                "nationality": "hrvatski"
-            }
-        ]
+    "author": {
+      "type": "Person",
+      "name": "Robert Frangeš Mihanović",
+      "birthDate": 1872,
+      "deathDate": 1940,
+      "nationality": "hrvatski"
     }
+  },
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 3,
+    "name": "Matoš na klupi",
+    "locationCreated": {
+      "type": "Place",
+      "name": "Strossmayerovo šetalište",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "Gornji Grad"
+      }
+    },
+    "artform": "kip",
+    "dateCreated": 1972,
+    "material": "aluminij",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 1.5,
+      "unitCode": "MTR"
+    },
+    "keywords": "Kip posvećen književniku Antunu Gustavu Matošu",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 8
+    },
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "Gornji Grad"
+    },
+    "author": {
+      "type": "Person",
+      "name": "Ivan Kožarić",
+      "birthDate": 1921,
+      "deathDate": 2020,
+      "nationality": "hrvatski"
+    }
+  },
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 4,
+    "name": "Kip J.J. Strossmayera",
+    "locationCreated": {
+      "type": "Place",
+      "name": "Strossmayerov trg",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "Donji Grad"
+      }
+    },
+    "artform": "kip",
+    "dateCreated": 1924,
+    "material": "bronca",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 3,
+      "unitCode": "MTR"
+    },
+    "keywords": "Posveta biskupu i meceni hrvatske kulture",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 8
+    },
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "Donji Grad"
+    },
+    "author": {
+      "type": "Person",
+      "name": "Ivan Meštrović",
+      "birthDate": 1883,
+      "deathDate": 1962,
+      "nationality": "hrvatski"
+    }
+  },
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 5,
+    "name": "Kip Marije Jurić Zagorke",
+    "locationCreated": {
+      "type": "Place",
+      "name": "Tkalčićeva ulica",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "Gornji Grad"
+      }
+    },
+    "artform": "statua",
+    "dateCreated": 1990,
+    "material": "bronca",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 1.7,
+      "unitCode": "MTR"
+    },
+    "keywords": "Posveta prvoj hrvatskoj novinarki i književnici",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 9
+    },
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "Gornji Grad"
+    },
+    "author": {
+      "type": "Person",
+      "name": "Stjepan Gračan",
+      "birthDate": 1941,
+      "deathDate": 2022,
+      "nationality": "hrvatski"
+    }
+  },
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 6,
+    "name": "Kumica Barica",
+    "locationCreated": {
+      "type": "Place",
+      "name": "Dolac",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "Donji Grad"
+      }
+    },
+    "artform": "kip",
+    "dateCreated": 2006,
+    "material": "bronca",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 1.6,
+      "unitCode": "MTR"
+    },
+    "keywords": "Kip posvećen tržnim prodavačima",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 7
+    },
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "Donji Grad"
+    },
+    "author": {
+      "type": "Person",
+      "name": "Stjepan Gračan",
+      "birthDate": 1941,
+      "deathDate": 2022,
+      "nationality": "hrvatski"
+    }
+  },
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 7,
+    "name": "Sveti Juraj u borbi sa zmajem",
+    "locationCreated": {
+      "type": "Place",
+      "name": "Trg Republike Hrvatske",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "Donji Grad"
+      }
+    },
+    "artform": "kip",
+    "dateCreated": 1867,
+    "material": "bronca",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 2.3,
+      "unitCode": "MTR"
+    },
+    "keywords": "Simbol borbe protiv zla",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 8
+    },
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "Donji Grad"
+    },
+    "author": {
+      "type": "Person",
+      "name": "Anton Dominik Fernkorn",
+      "birthDate": 1813,
+      "deathDate": 1878,
+      "nationality": "austrijski"
+    }
+  },
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 8,
+    "name": "August Šenoa",
+    "locationCreated": {
+      "type": "Place",
+      "name": "Vlaška ulica",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "Gornji Grad"
+      }
+    },
+    "artform": "statua",
+    "dateCreated": 1988,
+    "material": "bronca",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 1.9,
+      "unitCode": "MTR"
+    },
+    "keywords": "Kip posvećen poznatom hrvatskom piscu",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 8
+    },
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "Gornji Grad"
+    },
+    "author": {
+      "type": "Person",
+      "name": "Marija Ujević Galetović",
+      "birthDate": 1933,
+      "deathDate": 2020,
+      "nationality": "hrvatski"
+    }
+  },
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 9,
+    "name": "Bogorodica s anđelima",
+    "locationCreated": {
+      "type": "Place",
+      "name": "Katedrala",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "Gornji Grad"
+      }
+    },
+    "artform": "skulptura",
+    "dateCreated": 1873,
+    "material": "mramor i zeljezo",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 5,
+      "unitCode": "MTR"
+    },
+    "keywords": "Skulptura Bogorodice u Zagrebačkoj katedrali",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 9
+    },
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "Gornji Grad"
+    },
+    "author": {
+      "type": "Person",
+      "name": "Anton Dominik Fernkorn",
+      "birthDate": 1813,
+      "deathDate": 1878,
+      "nationality": "austrijski"
+    }
+  },
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 11,
+    "name": "Zdenac života",
+    "locationCreated": {
+      "type": "Place",
+      "name": "Trg Republike Hrvatske",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "Donji Grad"
+      }
+    },
+    "artform": "fontana",
+    "dateCreated": 1912,
+    "material": "bronca",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 1.2,
+      "unitCode": "MTR"
+    },
+    "keywords": "Fontana koja simbolizira život",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 10
+    },
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "Donji Grad"
+    },
+    "author": {
+      "type": "Person",
+      "name": "Ivan Meštrović",
+      "birthDate": 1883,
+      "deathDate": 1962,
+      "nationality": "hrvatski"
+    }
+  },
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 1,
+    "name": "Kip bana Jelačića",
+    "locationCreated": {
+      "type": "Place",
+      "name": "Trg bana Josipa Jelačića",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "Donji Grad"
+      }
+    },
+    "artform": "kip",
+    "dateCreated": 1866,
+    "material": "bronca",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 4.25,
+      "unitCode": "MTR"
+    },
+    "keywords": "Središnji kip na glavnom trgu",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 10
+    },
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "Donji Grad"
+    },
+    "author": {
+      "type": "Person",
+      "name": "Anton Dominik Fernkorn",
+      "birthDate": 1813,
+      "deathDate": 1878,
+      "nationality": "austrijski"
+    }
+  },
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 13,
+    "name": "test",
+    "locationCreated": {
+      "type": "Place",
+      "name": "test",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "test"
+      }
+    },
+    "artform": "test",
+    "dateCreated": 1999,
+    "material": "test",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 12,
+      "unitCode": "MTR"
+    },
+    "keywords": "test",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 2
+    },
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "test"
+    },
+    "author": {
+      "type": "Person",
+      "name": "Anton Dominik Fernkorn",
+      "birthDate": 1813,
+      "deathDate": 1878,
+      "nationality": "austrijski"
+    }
+  },
+  {
+    "context": "https://schema.org",
+    "type": "Sculpture",
+    "identifier": 14,
+    "name": "test2",
+    "locationCreated": {
+      "type": "Place",
+      "name": "test2",
+      "address": {
+        "type": "PostalAddress",
+        "addressLocality": "12"
+      }
+    },
+    "artform": "12",
+    "dateCreated": 12,
+    "material": "12",
+    "height": {
+      "type": "QuantitativeValue",
+      "value": 12,
+      "unitCode": "MTR"
+    },
+    "keywords": "12",
+    "aggregateRating": {
+      "type": "AggregateRating",
+      "ratingValue": 9
+    },
+    "containedInPlace": {
+      "type": "AdministrativeArea",
+      "name": "12"
+    },
+    "author": {
+      "type": "Person",
+      "name": "Ivan Meštrović",
+      "birthDate": 1883,
+      "deathDate": 1962,
+      "nationality": "hrvatski"
+    }
+  }
 ]

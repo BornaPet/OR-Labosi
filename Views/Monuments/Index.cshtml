@@ -26,7 +26,7 @@
         
         <div class="d-flex col-5 justify-content-end">
             <button class="btn btn-secondary me-2" v-on:click="downloadData('json')">Download JSON</button>
-            <button class="btn btn-secondary me-2" v-on:click="downloadData('csv')">Download CSV</button>
+            <button class="btn btn-secondary me-2" v-on:click="downloadData('csv', 'false')">Download CSV</button>
             <a class="btn btn-secondary me-2" asp-action="Create">Add new monument</a>
         </div>
     </div>
@@ -76,7 +76,7 @@
             };
         },
         methods: {
-            async downloadData(format) {
+            async downloadData(format, download) {
                 const url = `/filtered`;
 
                 try {
@@ -84,7 +84,8 @@
                         params: {
                             searchField: this.searchField,
                             searchTerm: this.searchTerm,
-                            format: format
+                            format: format,
+                            download: download
                         },
                         responseType: 'blob'
                     });
@@ -103,7 +104,7 @@
                 }
             },
             goToDetails(id) {
-                window.location.href = `/Monuments/Details/${id}`;
+                window.location.href = `/Monuments/Details?id=${id}`;
             }
         
         },

@@ -1,0 +1,21 @@
+﻿@model List<OtvorenoRacunalstvoLabosi.DTO.ArtistDto>
+
+<h2>Korisnički profil</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tip</th>
+            <th>Vrijednost</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.Name</td>
+                <td>@claim.Nationality</td>
+            </tr>
+        }
+    </tbody>
+</table>
